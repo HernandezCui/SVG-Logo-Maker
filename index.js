@@ -4,7 +4,7 @@ const { Triangle, Circle, Square } = require('./lib/shapes');
 
 
 // function that writes the svg file using user answers
-function writeToFile(filename, answers) {
+function writeToFile(fileName, answers) {
     let svgString = "";
     svgString = '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">';
     svgString += '<g>';
@@ -29,8 +29,8 @@ function writeToFile(filename, answers) {
     svgString += "</g>";
     svgString += "</svg>";
 
-    
-
-
-
+// genrating svg file using the file system 
+    fs.writeFile(fileName, svgString, (err) => {
+        err ? console.log(err) : console.log("Generated logo.svg");
+    });
 }
