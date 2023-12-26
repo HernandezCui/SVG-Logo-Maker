@@ -15,7 +15,7 @@ function writeToFile(fileName, answers) {
     let setShape;
     if (answers.shape === "Triangle") {
         setShape = new Triangle();
-        svgString += `<polygon points="100, 15 200, 200 0, 200" fill="${answers.shapeBackgroundColor}" />`;
+        svgString += `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeBackgroundColor}" />`;
     } else if (answers.shape === "Square") {
         setShape = new Square();
         svgString += `<rect width="200" height="200" fill="${answers.shapeBackgroundColor}" />`;
@@ -25,7 +25,7 @@ function writeToFile(fileName, answers) {
     }
 
 // text tag for text alignment, color, and font size 
-    svgString += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}">${answers.text}</text>`;
+    svgString += `<text x="100" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}">${answers.text}</text>`;
     svgString += "</g>";
     svgString += "</svg>";
 
