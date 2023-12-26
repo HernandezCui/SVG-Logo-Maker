@@ -24,13 +24,12 @@ function writeToFile(filename, answers) {
         svgString += `<circle cx="150" cy="100" r="100" fill="${answers.shapeBackgroundColor}" />`;
     }
 
+// text tag for text alignment, color, and font size 
+    svgString += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}">${answers.text}</text>`;
+    svgString += "</g>";
+    svgString += "</svg>";
 
-
-
-
-
-
-
+    
 
 
 
