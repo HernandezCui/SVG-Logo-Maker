@@ -14,7 +14,7 @@ Module 10 Challenge
 ## Description
 You will be able to generate a SVG logo with your choice of shape that consit of a (Triangle, Square, or Circle). You can choose text color, shape color, and can only input a limit of 3 characters for your logo. Here is an example
 
-Watch Video here: 
+Watch the [video] https://youtu.be/y3dmLJO0XsQ for usage 
 
 ## Installation
 You will need to clone this project repository to your computer. Use command "npm install" to install dependencies. Then use the command "npm install --save-dev jest" to install jest. Check if node is installed by running "node -v" on your command line.
